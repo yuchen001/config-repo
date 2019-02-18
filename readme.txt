@@ -1,4 +1,3 @@
 Git is a version control system.
 Git is free software.
-Your branch is ahead of 'origin/master' by 1 commit.
-
+Creating a new branch is quick and simple.
