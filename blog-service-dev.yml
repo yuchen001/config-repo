@@ -26,3 +26,7 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:8999/eureka
   instance:
     hostname: localhost
+
+info:
+  profile: dev
+  from: git-repo
