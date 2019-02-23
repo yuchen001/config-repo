@@ -1,0 +1,28 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#    database-platform: io.brant.example.postgres94.jsonb.dialect.JSONBPostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/blog?verifyServerCertificate=false&useSSL=false&characterEncoding=utf-8
+    username: blog_001
+    password: YeBzU7vHbaVDHQt
+    driver-class-name: org.postgresql.Driver
+    
+  application:
+    name: blog-service
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+  http:
+    converters:
+      preferred-json-mapper: jackson
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8999/eureka
+  instance:
+    hostname: localhost
